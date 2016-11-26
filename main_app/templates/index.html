@@ -10,8 +10,8 @@
     <h1>TreasureGram</h1>
 </nav>
 <main class="container" role="main">
+    {% for treasure in treasures %}
     <div class="treasure panel panel-default">
-        {% for treasure in treasures %}
         <h2 class="panel-title">{{ treasure.name }}</h2>
     </div>
     <div class="panel-body">
@@ -24,9 +24,9 @@
                 <th>Value:</th>
                 <td>
                     {% if treasure.value > 0 %}
-                    {{ treasure.value }}
+                        {{ treasure.value }}
                     {% else %}
-                    {{ Unknown }}
+                        Unknown
                     {% endif %}
                 </td>
             </tr>
