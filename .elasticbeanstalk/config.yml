@@ -1,0 +1,17 @@
+branch-defaults:
+  master:
+    environment: null
+    group_suffix: null
+environment-defaults:
+  LowCost-env:
+    branch: null
+    repository: null
+global:
+  application_name: Treasuregram
+  branch: master
+  default_ec2_keyname: testing
+  default_platform: Python 3.4
+  default_region: us-west-2
+  profile: eb-cli
+  repository: Django-Treasuregram-EB
+  sc: git
